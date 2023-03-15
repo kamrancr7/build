@@ -6,16 +6,15 @@
        <property name="Logger.location" value="../Logger"/>
 
     <property name="supernova.location" value="../supernova"/>
-
+       <property name="TrnBusinessService.location" value="../TrnBusinessService"/>
 
        <property name="IntegrationService.location" value="../IntegrationService"/>
-
+       <property name="DigitalServices.location" value="../DigitalServices"/>
 
        <property name="EmailService.location" value="../EmailService"/>
 
     <property name="comet.location" value="../comet"/>
        <property name="CrudService.location" value="../CrudService"/>
-
 
        <property name="aurora.location" value="../aurora"/>
 
@@ -27,7 +26,7 @@
        <property name="jars.location" value="../jars"/>
 
        <property name="proxyIntegrationService.location" value="../proxyIntegrationService"/>
-
+       <property name="proxyDigitalService.location" value="../proxyDigitalService"/>
 
        <property name="build.compiler" value="extJavac"/>
     <property name="debuglevel" value="source,lines,vars"/>
@@ -46,7 +45,7 @@
        <property name="mobileService" value="../Libraries/mobileServices" />
 
        <property name="IntegrationService" value="../Libraries/IntegrationService" />
-
+       <property name="DigitalServices" value="../Libraries/DigitalServices" />
 
        <property name="EmailService" value="../Libraries/EmailService" />
        <property name="Aurora" value="../Libraries/aurora" />
@@ -163,7 +162,7 @@
                <pathelement location="${wls_modules}/modules/com.sun.xml.bind.jaxb-xjc.jar"/>
                <pathelement location="${wls_modules}/modules/com.fasterxml.woodstox.woodstox-core.jar"/>
                <pathelement location="${wls_modules}/modules/org.codehaus.woodstox.stax2-api.jar"/>
-               <pathelement location="${wls_modules}/modules/internal/features/com.oracle.webservices.wls.wls-classpath.jar"/>
+              <pathelement location="${wls_modules}/modules/internal/features/com.oracle.webservices.wls.wls-classpath.jar"/>
                <pathelement location="${wls_modules}/modules/com.bea.core.xml.xmlbeans.jar"/>
                <pathelement location="${wls_modules}/modules/com.bea.core.xml.beaxmlbeans.jar"/>
                <pathelement location="${wls_modules}/modules/thirdparty/classmate-1.3.1.jar"/>
@@ -176,7 +175,7 @@
                <pathelement location="${wls_modules}/modules/com.bea.core.apache.commons.pool.jar"/>
                <pathelement location="${wls_modules}/modules/oro.oro.jar"/>
                <pathelement location="${wls_modules}/modules/thirdparty/cglib-nodep-3.2.5.jar"/>
-               <pathelement location="${wls_modules}/modules/thirdparty/features/cglib-nodep.jar"/>
+              <pathelement location="${wls_modules}/modules/thirdparty/features/cglib-nodep.jar"/>
                <pathelement location="${wls_modules}/modules/thirdparty/guava-20.0.jar"/>
                <pathelement location="${wls_modules}/modules/thirdparty/features/guava.jar"/>
                <pathelement location="${wls_modules}/modules/org.hibernate.hibernate-validator-cdi.jar"/>
@@ -365,7 +364,7 @@
                <pathelement location="${wls_modules}/modules/com.oracle.weblogic.core.base.api.jar"/>
                <pathelement location="${wls_modules}/modules/com.oracle.weblogic.common.frag.jar"/>
                <pathelement location="${wls_modules}/modules/com.oracle.weblogic.common.internal.frag.jar"/>
-              <pathelement location="${wls_modules}/modules/com.oracle.weblogic.health.jar"/>
+               <pathelement location="${wls_modules}/modules/com.oracle.weblogic.health.jar"/>
                <pathelement location="${wls_modules}/modules/com.oracle.weblogic.kernel.jar"/>
                <pathelement location="${wls_modules}/modules/com.bea.core.weblogic.lifecycle.jar"/>
                <pathelement location="${wls_modules}/modules/com.oracle.weblogic.server.jar"/>
@@ -412,7 +411,7 @@
                <pathelement location="${wls_modules}/modules/com.oracle.weblogic.protocol.api.jar"/>
                <pathelement location="${wls_modules}/modules/com.oracle.weblogic.server.channels.jar"/>
                <pathelement location="${wls_modules}/modules/com.oracle.weblogic.server.channels-api.jar"/>
-              <pathelement location="${wls_modules}/modules/com.oracle.weblogic.socket.jar"/>
+               <pathelement location="${wls_modules}/modules/com.oracle.weblogic.socket.jar"/>
                <pathelement location="${wls_modules}/modules/com.bea.core.weblogic.socket.api.jar"/>
                <pathelement location="${wls_modules}/modules/com.bea.core.utils.agent.jar"/>
                <pathelement location="${wls_modules}/modules/com.bea.core.utils.compiler.jar"/>
@@ -464,7 +463,7 @@
                <pathelement location="${wls_modules}/modules/com.bea.core.diagnostics.instrumentor.jar"/>
                <pathelement location="${wls_modules}/modules/com.bea.core.repackaged.apache.commons.logging.jar"/>
                <pathelement location="${wls_modules}/modules/com.bea.core.logging.debug.jar"/>
-              <pathelement location="${wls_modules}/modules/com.bea.core.diagnostics.logging.jar"/>
+               <pathelement location="${wls_modules}/modules/com.bea.core.diagnostics.logging.jar"/>
                <pathelement location="${wls_modules}/modules/com.bea.core.logging.jar"/>
                <pathelement location="${wls_modules}/modules/com.oracle.weblogic.logging.jar"/>
                <pathelement location="${wls_modules}/modules/com.oracle.core.weblogic.msgcat.jar"/>
@@ -860,7 +859,7 @@
         <pathelement location="${wls_modules}/com.bea.core.datasource_1.9.0.0.jar"/>
         <pathelement location="${wls_modules}/com.bea.core.descriptor.j2ee.binding_1.5.0.0.jar"/>
         <pathelement location="${wls_modules}/com.bea.core.descriptor.j2ee.ja_1.5.0.0.jar"/>
-        <pathelement location="${wls_modules}/com.bea.core.descriptor.j2ee_1.5.0.0.jar"/>
+       <pathelement location="${wls_modules}/com.bea.core.descriptor.j2ee_1.5.0.0.jar"/>
         <pathelement location="${wls_modules}/com.bea.core.descriptor.settable.binding_1.7.0.0.jar"/>
         <pathelement location="${wls_modules}/com.bea.core.descriptor.wl.binding_1.3.3.0.jar"/>
         <pathelement location="${wls_modules}/com.bea.core.descriptor.wl.ja_1.3.3.0.jar"/>
@@ -1171,6 +1170,17 @@
         <path refid="EAR Libraries.libraryclasspath"/>
     </path>
 
+    <echo level="info" message="going for logger"></echo>
+
+       <echo level="info" message="logger:: ${Log4j.classpath}"></echo>
+
+       <path id="Logger.classpath">
+               <pathelement location="${Logger.location}/build/classes"/>
+                     <pathelement location="../Libraries/log4j/log4j-1.2.16.jar"/>
+               <path refid="Log4j.classpath"/>
+               <path refid="slfj-logger.classpath"/>
+               <path refid="EAR Libraries.libraryclasspath"/>
+           </path>
 
        <path id="common.classpath">
                <pathelement location="${common_libs}/commons-codec-1.8.jar"/>
@@ -1256,34 +1266,22 @@
               <path refid="WebLogic System Libraries.libraryclasspath"/>
     </path>
 
-       <path id="DataModel.classpath">
-                             <pathelement location="${DataModel.location}/build/classes"/>
-                                  <path refid="JreportLib.classpath"/>
-                                  <path refid="jradius.classpath"/>
-                                  <pathelement location="${IntegrationService}/jackson-annotations-2.6.5.jar" />
-                                  <pathelement location="${IntegrationService}/jackson-core-2.7.1.jar" />
-                                  <pathelement location="${IntegrationService}/jackson-databind-2.7.1-1.jar" />
-
-                         </path>
-
-       <path id="Logger.classpath">
-                      <pathelement location="${Logger.location}/build/classes"/>
-                      <path refid="Log4j.classpath"/>
-                      <path refid="EAR Libraries.libraryclasspath"/>
-                  </path>
+       <echo level="info" message="going to insert class path in crud service"></echo>
 
        <path id="CrudService.classpath">
-                  <pathelement location="${CrudService.location}/build/classes"/>
-                  <path refid="Log4j.classpath"/>
+               <pathelement location="${CrudService.location}/build/classes"/>
+                     <pathelement location="../../DataModel"/>
+                     <pathelement location="../../Logger"/>
+                     <path refid="Log4j.classpath"/>
                      <path refid="common.classpath"/>
                      <path refid="mybatis.classpath"/>
-               <path refid="sqldriver.classpath"/>
+                     <path refid="sqldriver.classpath"/>
+                     <path refid="DataModel.classpath"/>
                <path refid="EAR Libraries.libraryclasspath"/>
-               <path refid="DataModel.classpath"/>
-               <path refid="Logger.classpath"/>
-               <path refid="WebLogic System Libraries.libraryclasspath"/>
+                     <path refid="Logger.classpath"/>
+                     <pathelement location="../Libraries/bouncy_castle/jce-jdk13-144.jar"/>
+                     <path refid="WebLogic System Libraries.libraryclasspath"/>
            </path>
-
 
        <path id="pulsar.classpath">
         <pathelement location="${pulsar.location}/build/classes"/>
@@ -1292,7 +1290,15 @@
 
     </path>
 
+              <path id="DataModel.classpath">
+                      <pathelement location="${DataModel.location}/build/classes"/>
+                           <path refid="JreportLib.classpath"/>
+                           <path refid="jradius.classpath"/>
+                           <pathelement location="${DigitalServices}/jackson-annotations-2.6.5.jar" />
+                           <pathelement location="${DigitalServices}/jackson-core-2.7.1.jar" />
+                           <pathelement location="${DigitalServices}/jackson-databind-2.7.1-1.jar" />
 
+                  </path>
 
     <path id="Web App Libraries.libraryclasspath">
         <pathelement location="../comet"/>
@@ -1308,9 +1314,6 @@
        <path id="Web App Libraries mobileService.libraryclasspath">
                              <pathelement location="../../pulsar"/>
                              <pathelement location="../../star"/>
-                                  <pathelement location="../Logger"/>
-                            <pathelement location="../DataModel"/>
-                                  <pathelement location="../CrudService"/>
                              <pathelement location="${mobileService}/asm-3.1.jar"/>
                              <pathelement location="${mobileService}/commons-codec-1.8.jar"/>
                              <pathelement location="${mobileService}/commons-fileupload-1.3.jar"/>
@@ -1357,6 +1360,34 @@
 
                                </path>
 
+       <path id="Web App Libraries DigitalServices.libraryclasspath">
+                                         <pathelement location="${DigitalServices}/apache-commons-lang.jar"/>
+                                   <pathelement location="${DigitalServices}/bcprov-jdk16-146.jar"/>
+                                   <pathelement location="${DigitalServices}/bouncycastle.jar"/>
+                                   <pathelement location="${DigitalServices}/bson-3.0.1.jar"/>
+                                   <pathelement location="${DigitalServices}/gson-2.2.2.jar"/>
+                                   <pathelement location="${DigitalServices}/guava-15.0-rc1.jar"/>
+                                   <pathelement location="${DigitalServices}/httpclient-4.5.2.jar"/>
+                                   <pathelement location="${DigitalServices}/httpclient-osgi-4.5.3.jar"/>
+                                   <pathelement location="${DigitalServices}/httpcore-4.4.jar"/>
+                                   <pathelement location="${DigitalServices}/jaxrs-ri-2.17.jar"/>
+                                   <pathelement location="${DigitalServices}/jdbc-api-1.4.jar"/>
+                                   <pathelement location="${DigitalServices}/jersey-apache-connector-2.30.jar"/>
+                                   <pathelement location="${DigitalServices}/jersey-common-2.0-m01.jar"/>
+                                   <pathelement location="${DigitalServices}/jersey-json-1.9.1.jar"/>
+                                         <pathelement location="${DigitalServices}/jersey-server-2.11.jar"/>
+                                         <pathelement location="${DigitalServices}/json-20090211.jar"/>
+                                         <pathelement location="${DigitalServices}/log4j-1.2.16.jar"/>
+                                </path>
+                           <path id="DigitalServices.classpath">
+                                          <pathelement location="build/classes"/>
+                                         <path refid="WebLogic System Libraries.libraryclasspath"/>
+                                         <path refid="EAR Libraries.libraryclasspath"/>
+                                         <path refid="Web App Libraries DigitalServices.libraryclasspath"/>
+                                                <path refid="Logger.classpath"/>
+                                             <path refid="DataModel.classpath"/>
+
+                                      </path>
 
        <path id="Web App Libraries EmailService.libraryclasspath">
                                          <pathelement location="${EmailService}/apache-commons-lang.jar"/>
@@ -1415,7 +1446,12 @@
                       <path refid="WebLogic System Libraries.libraryclasspath"/>
                   </path>
 
-
+       <path id="proxyDigitalService.classpath">
+                             <pathelement location="build/classes"/>
+                             <path refid="Web App Libraries.libraryclasspath"/>
+                             <path refid="EAR Libraries.libraryclasspath"/>
+                             <path refid="WebLogic System Libraries.libraryclasspath"/>
+                         </path>
 
     <path id="supernova.classpath">
         <pathelement location="${supernova.location}/build/classes"/>
@@ -1439,6 +1475,28 @@
               <path refid="common.classpath"/>
     </path>
 
+       <path id="TrnBusinessService.classpath">
+               <pathelement location="${TrnBusinessService.location}/build/classes"/>
+              <path refid="jradius.classpath"/>
+                     <pathelement location="${jradius}/RadiusClient.jar"/>
+              <pathelement location="${IntegrationService}/jackson-annotations-2.6.5.jar"/>
+               <pathelement location="${IntegrationService}/jackson-core-2.7.1.jar"/>
+              <pathelement location="${IntegrationService}/jackson-databind-2.7.1-1.jar"/>
+              <pathelement location="${wls_modules}/json-20090211.jar"/>
+               <path refid="WebLogic System Libraries.libraryclasspath"/>
+               <path refid="Web App Libraries.libraryclasspath"/>
+               <path refid="EAR Libraries.libraryclasspath"/>
+               <path refid="jersey.userclasspath"/>
+               <path refid="CrudService.classpath"/>
+                     <path refid="JreportLib.classpath"/>
+                     <path refid="mail.classpath"/>
+                     <path refid="mybatis.classpath"/>
+                     <path refid="sqldriver.classpath"/>
+               <path refid="Logger.classpath" />
+                     <path refid="DataModel.classpath"/>
+                     <path refid="common.classpath"/>
+           </path>
+
     <path id="aurora.classpath">
         <pathelement location="${aurora.location}/build/classes"/>
         <path refid="WebLogic System Libraries.libraryclasspath"/>
@@ -1454,10 +1512,11 @@
               <path refid="Log4j.classpath"/>
         <path refid="slfj-logger.classpath"/>
        <path refid="Aurora.classpath"/>
-
+       <path refid="Logger.classpath" />
+       <path refid="DataModel.classpath" />
+       <path refid="CrudService.classpath" />
+       <pathelement location="${DigitalServices}/gson-2.2.2.jar"/>
     </path>
-
-
     <target name="init">
         <mkdir dir="build/classes"/>
         <copy includeemptydirs="false" todir="build/classes">
@@ -1473,13 +1532,12 @@
        <delete dir="${comet.location}/build/classes">
        </delete>
        <delete dir="${Logger.location}/build/classes"/>
-       <delete dir="${CrudService.location}/build/classes">
-              </delete>
+       <delete dir="${CrudService.location}/build/classes"/>
        <delete dir="${supernova.location}/build/classes"/>
-
+       <delete dir="${TrnBusinessService.location}/build/classes"/>
        <delete dir="${mobileService.location}/build/classes"/>
        <delete dir="${IntegrationService.location}/build/classes"/>
-
+       <delete dir="${DigitalServices.location}/build/classes"/>
        <delete dir="${EmailService.location}/build/classes"/>
        <delete dir="${aurora.location}/build/classes"/>
        <delete dir="${pulsar.location}/build/classes"/>
@@ -1523,13 +1581,12 @@
             </propertyset>
         </ant>
 
-       <echo level="info" message="at ${CrudService.location}"></echo>
-               <ant antfile="build.xml" dir="${CrudService.location}" inheritAll="false" target="build-project">
-                   <propertyset>
-                       <propertyref name="build.compiler"/>
-                   </propertyset>
-               </ant>
-
+              <echo level="info" message="at ${CrudService.location}"></echo>
+                      <ant antfile="build.xml" dir="${CrudService.location}" inheritAll="false" target="build-project">
+                          <propertyset>
+                              <propertyref name="build.compiler"/>
+                          </propertyset>
+                      </ant>
 
         <ant antfile="build.xml" dir="${supernova.location}" inheritAll="false" target="build-project">
             <propertyset>
@@ -1537,6 +1594,11 @@
             </propertyset>
         </ant>
 
+              <ant antfile="build.xml" dir="${TrnBusinessService.location}" inheritAll="false" target="build-project">
+                          <propertyset>
+                              <propertyref name="build.compiler"/>
+                          </propertyset>
+                      </ant>
 
         <ant antfile="build.xml" dir="${mobileService.location}" inheritAll="false" target="build-project">
             <propertyset>
@@ -1549,6 +1611,11 @@
                    </propertyset>
               </ant>
 
+              <ant antfile="build.xml" dir="${DigitalServices.location}" inheritAll="false" target="build-project">
+                                 <propertyset>
+                                     <propertyref name="build.compiler"/>
+                                 </propertyset>
+                            </ant>
 
        <ant antfile="build.xml" dir="${EmailService.location}" inheritAll="false" target="build-project">
                           <propertyset>
@@ -1566,7 +1633,11 @@
                           </propertyset>
                      </ant>
 
-
+       <ant antfile="build.xml" dir="${proxyDigitalService.location}" inheritAll="false" target="build-project">
+                                 <propertyset>
+                                     <propertyref name="build.compiler"/>
+                                 </propertyset>
+                            </ant>
 
 
     </target>
@@ -1598,7 +1669,7 @@
 
 
                                   </fileset>
-                            </jar>
+                           </jar>
 
               <jar destfile="${jars.location}/comet.jar">
                                   <fileset dir="${comet.location}/build/classes">
@@ -1611,8 +1682,6 @@
 
                                                 </fileset>
                                          </jar>
-
-
 
               <jar destfile="${jars.location}/star.jar">
                                   <fileset dir="${star.location}/build/classes">
@@ -1642,7 +1711,14 @@
                                          </lib>
                            </war>
 
+              <war destfile="${jars.location}/TrnBusinessService.war" webxml="${TrnBusinessService.location}/WebContent/WEB-INF/web.xml">
+                                                <fileset dir="${TrnBusinessService.location}/WebContent" />
+                                                <classes dir="${TrnBusinessService.location}/build/classes" />
+                                                <lib dir="${jars.location}">
+                                                       <exclude name="*.war"/>
 
+                                                       </lib>
+                                         </war>
 
               <war destfile="${jars.location}/mobileService.war" webxml="${mobileService.location}/WebContent/WEB-INF/web.xml">
                                                 <fileset dir="${mobileService.location}/WebContent" />
@@ -1661,7 +1737,14 @@
                                                                      </lib>
                                                        </war>
 
+              <war destfile="${jars.location}/DigitalServices.war" webxml="${DigitalServices.location}/WebContent/WEB-INF/web.xml">
+                                                                           <fileset dir="${DigitalServices.location}/WebContent" />
+                                                                           <classes dir="${DigitalServices.location}/build/classes" />
+                                                                           <lib dir="${jars.location}">
+                                                                                  <exclude name="*.war"/>
 
+                                                                                  </lib>
+                                                                     </war>
 
               <war destfile="${jars.location}/EmailService.war" webxml="${EmailService.location}/WebContent/WEB-INF/web.xml">
                                                                            <fileset dir="${EmailService.location}/WebContent" />
@@ -1688,7 +1771,14 @@
                                                                                   </lib>
                                                                      </war>
 
-
+              <war destfile="${jars.location}/proxyDigitalService.war" webxml="${proxyDigitalService.location}/WebContent/WEB-INF/web.xml">
+                                                                                         <fileset dir="${proxyDigitalService.location}/WebContent" />
+                                                                                         <classes dir="${proxyDigitalService.location}/build/classes" />
+                                                                                         <lib dir="${jars.location}">
+                                                                                                <exclude name="*.war"/>
+                                                                                                <exclude name="*.jar"/>
+                                                                                                </lib>
+                                                                                  </war>
 
        </target>
 
